@@ -1,0 +1,1312 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<constant const='true' declared_type='NSString*' name='kGCKErrorCustomDataKey' type='@'/>
+<constant const='true' declared_type='NSInteger' name='kGCKInvalidRequestID' type='i' type64='q'/>
+<constant const='true' declared_type='NSInteger' name='kGCKMediaCommandPause' type='i' type64='q'/>
+<constant const='true' declared_type='NSInteger' name='kGCKMediaCommandSeek' type='i' type64='q'/>
+<constant const='true' declared_type='NSInteger' name='kGCKMediaCommandSetVolume' type='i' type64='q'/>
+<constant const='true' declared_type='NSInteger' name='kGCKMediaCommandSkipBackward' type='i' type64='q'/>
+<constant const='true' declared_type='NSInteger' name='kGCKMediaCommandSkipForward' type='i' type64='q'/>
+<constant const='true' declared_type='NSInteger' name='kGCKMediaCommandToggleMute' type='i' type64='q'/>
+<constant const='true' declared_type='NSString*' name='kGCKMediaDefaultReceiverApplicationID' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyAlbumArtist' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyAlbumTitle' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyArtist' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyBroadcastDate' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyComposer' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyCreationDate' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyDiscNumber' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyEpisodeNumber' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyHeight' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyLocationLatitude' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyLocationLongitude' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyLocationName' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyReleaseDate' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeySeasonNumber' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeySeriesTitle' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyStudio' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeySubtitle' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyTitle' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyTrackNumber' type='@'/>
+<constant const='true' declared_type='NSString*' name='kGCKMetadataKeyWidth' type='@'/>
+<enum name='GCKActiveInputStatusActive' value='1'/>
+<enum name='GCKActiveInputStatusInactive' value='0'/>
+<enum name='GCKActiveInputStatusUnknown' value='-1'/>
+<enum name='GCKDeviceStatusBusy' value='1'/>
+<enum name='GCKDeviceStatusIdle' value='0'/>
+<enum name='GCKDeviceStatusUnknown' value='-1'/>
+<enum name='GCKErrorCodeAppDidEnterBackground' value='91'/>
+<enum name='GCKErrorCodeApplicationNotFound' value='7'/>
+<enum name='GCKErrorCodeApplicationNotRunning' value='8'/>
+<enum name='GCKErrorCodeCancelled' value='5'/>
+<enum name='GCKErrorCodeDeviceAuthenticationFailure' value='3'/>
+<enum name='GCKErrorCodeDisconnected' value='92'/>
+<enum name='GCKErrorCodeDuplicateRequest' value='93'/>
+<enum name='GCKErrorCodeInvalidApplicationSessionID' value='96'/>
+<enum name='GCKErrorCodeInvalidMediaPlayerState' value='95'/>
+<enum name='GCKErrorCodeInvalidRequest' value='4'/>
+<enum name='GCKErrorCodeMediaLoadFailed' value='94'/>
+<enum name='GCKErrorCodeNetworkError' value='1'/>
+<enum name='GCKErrorCodeNotAllowed' value='6'/>
+<enum name='GCKErrorCodeTimeout' value='2'/>
+<enum name='GCKErrorCodeUnknown' value='99'/>
+<enum name='GCKMediaControlChannelResumeStatePause' value='2'/>
+<enum name='GCKMediaControlChannelResumeStatePlay' value='1'/>
+<enum name='GCKMediaControlChannelResumeStateUnchanged' value='0'/>
+<enum name='GCKMediaMetadataTypeGeneric' value='0'/>
+<enum name='GCKMediaMetadataTypeMovie' value='1'/>
+<enum name='GCKMediaMetadataTypeMusicTrack' value='3'/>
+<enum name='GCKMediaMetadataTypePhoto' value='4'/>
+<enum name='GCKMediaMetadataTypeTVShow' value='2'/>
+<enum name='GCKMediaMetadataTypeUser' value='100'/>
+<enum name='GCKMediaPlayerIdleReasonCancelled' value='2'/>
+<enum name='GCKMediaPlayerIdleReasonError' value='4'/>
+<enum name='GCKMediaPlayerIdleReasonFinished' value='1'/>
+<enum name='GCKMediaPlayerIdleReasonInterrupted' value='3'/>
+<enum name='GCKMediaPlayerIdleReasonNone' value='0'/>
+<enum name='GCKMediaPlayerStateBuffering' value='4'/>
+<enum name='GCKMediaPlayerStateIdle' value='1'/>
+<enum name='GCKMediaPlayerStatePaused' value='3'/>
+<enum name='GCKMediaPlayerStatePlaying' value='2'/>
+<enum name='GCKMediaPlayerStateUnknown' value='0'/>
+<enum name='GCKMediaStreamTypeBuffered' value='1'/>
+<enum name='GCKMediaStreamTypeLive' value='2'/>
+<enum name='GCKMediaStreamTypeNone' value='0'/>
+<enum name='GCKMediaStreamTypeUnknown' value='99'/>
+<enum name='GCKMediaTextTrackStyleEdgeTypeDepressed' value='4'/>
+<enum name='GCKMediaTextTrackStyleEdgeTypeDropShadow' value='2'/>
+<enum name='GCKMediaTextTrackStyleEdgeTypeNone' value='0'/>
+<enum name='GCKMediaTextTrackStyleEdgeTypeOutline' value='1'/>
+<enum name='GCKMediaTextTrackStyleEdgeTypeRaised' value='3'/>
+<enum name='GCKMediaTextTrackStyleEdgeTypeUnknown' value='-1'/>
+<enum name='GCKMediaTextTrackStyleFontGenericFamilyCasual' value='5'/>
+<enum name='GCKMediaTextTrackStyleFontGenericFamilyCursive' value='6'/>
+<enum name='GCKMediaTextTrackStyleFontGenericFamilyMonospacedSansSerif' value='2'/>
+<enum name='GCKMediaTextTrackStyleFontGenericFamilyMonospacedSerif' value='4'/>
+<enum name='GCKMediaTextTrackStyleFontGenericFamilyNone' value='0'/>
+<enum name='GCKMediaTextTrackStyleFontGenericFamilySansSerif' value='1'/>
+<enum name='GCKMediaTextTrackStyleFontGenericFamilySerif' value='3'/>
+<enum name='GCKMediaTextTrackStyleFontGenericFamilySmallCapitals' value='7'/>
+<enum name='GCKMediaTextTrackStyleFontGenericFamilyUnknown' value='-1'/>
+<enum name='GCKMediaTextTrackStyleFontStyleBold' value='1'/>
+<enum name='GCKMediaTextTrackStyleFontStyleBoldItalic' value='3'/>
+<enum name='GCKMediaTextTrackStyleFontStyleItalic' value='2'/>
+<enum name='GCKMediaTextTrackStyleFontStyleNormal' value='0'/>
+<enum name='GCKMediaTextTrackStyleFontStyleUnknown' value='-1'/>
+<enum name='GCKMediaTextTrackStyleWindowTypeNone' value='0'/>
+<enum name='GCKMediaTextTrackStyleWindowTypeNormal' value='1'/>
+<enum name='GCKMediaTextTrackStyleWindowTypeRoundedCorners' value='2'/>
+<enum name='GCKMediaTextTrackStyleWindowTypeUnknown' value='-1'/>
+<enum name='GCKMediaTextTrackSubtypeCaptions' value='3'/>
+<enum name='GCKMediaTextTrackSubtypeChapters' value='5'/>
+<enum name='GCKMediaTextTrackSubtypeDescriptions' value='4'/>
+<enum name='GCKMediaTextTrackSubtypeMetadata' value='6'/>
+<enum name='GCKMediaTextTrackSubtypeSubtitles' value='1'/>
+<enum name='GCKMediaTextTrackSubtypeUnknown' value='0'/>
+<enum name='GCKMediaTrackTypeAudio' value='2'/>
+<enum name='GCKMediaTrackTypeText' value='1'/>
+<enum name='GCKMediaTrackTypeUnknown' value='0'/>
+<enum name='GCKMediaTrackTypeVideo' value='3'/>
+<enum name='GCKSenderApplicationInfoPlatformAndroid' value='1'/>
+<enum name='GCKSenderApplicationInfoPlatformChrome' value='3'/>
+<enum name='GCKSenderApplicationInfoPlatformiOS' value='2'/>
+<class name='GCKApplicationMetadata'>
+<method selector='applicationID'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='applicationName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='images'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='namespaces'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='senderAppIdentifier'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='senderAppLaunchURL'>
+<retval declared_type='NSURL*' type='@'/>
+</method>
+<method selector='senderApplicationInfo'>
+<retval declared_type='GCKSenderApplicationInfo*' type='@'/>
+</method>
+</class>
+<class name='GCKCastChannel'>
+<method selector='didConnect'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didDisconnect'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didReceiveTextMessage:'>
+<arg declared_type='NSString*' index='0' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='generateRequestID'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='generateRequestNumber'>
+<retval declared_type='NSNumber*' type='@'/>
+</method>
+<method selector='initWithNamespace:'>
+<arg declared_type='NSString*' index='0' name='protocolNamespace' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isConnected'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='protocolNamespace'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='sendTextMessage:'>
+<arg declared_type='NSString*' index='0' name='message' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='GCKColor'>
+<method selector='CSSString'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='alpha'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method class_method='true' selector='black'>
+<retval declared_type='GCKColor*' type='@'/>
+</method>
+<method class_method='true' selector='blue'>
+<retval declared_type='GCKColor*' type='@'/>
+</method>
+<method selector='blue'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method class_method='true' selector='cyan'>
+<retval declared_type='GCKColor*' type='@'/>
+</method>
+<method class_method='true' selector='green'>
+<retval declared_type='GCKColor*' type='@'/>
+</method>
+<method selector='green'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='initWithCGColor:'>
+<arg declared_type='CGColorRef' index='0' name='color' type='^{CGColor=}'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithCSSString:'>
+<arg declared_type='NSString*' index='0' name='CSSString' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithRed:green:blue:'>
+<arg declared_type='CGFloat' index='0' name='red' type='f' type64='d'/>
+<arg declared_type='CGFloat' index='1' name='green' type='f' type64='d'/>
+<arg declared_type='CGFloat' index='2' name='blue' type='f' type64='d'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithRed:green:blue:alpha:'>
+<arg declared_type='CGFloat' index='0' name='red' type='f' type64='d'/>
+<arg declared_type='CGFloat' index='1' name='green' type='f' type64='d'/>
+<arg declared_type='CGFloat' index='2' name='blue' type='f' type64='d'/>
+<arg declared_type='CGFloat' index='3' name='alpha' type='f' type64='d'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithUIColor:'>
+<arg declared_type='UIColor*' index='0' name='color' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='magenta'>
+<retval declared_type='GCKColor*' type='@'/>
+</method>
+<method class_method='true' selector='red'>
+<retval declared_type='GCKColor*' type='@'/>
+</method>
+<method selector='red'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='setAlpha:'>
+<arg declared_type='CGFloat' index='0' name='alpha' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBlue:'>
+<arg declared_type='CGFloat' index='0' name='blue' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setGreen:'>
+<arg declared_type='CGFloat' index='0' name='green' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRed:'>
+<arg declared_type='CGFloat' index='0' name='red' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='white'>
+<retval declared_type='GCKColor*' type='@'/>
+</method>
+<method class_method='true' selector='yellow'>
+<retval declared_type='GCKColor*' type='@'/>
+</method>
+</class>
+<class name='GCKDevice'>
+<method selector='deviceID'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='friendlyName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='icons'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='initWithIPAddress:servicePort:'>
+<arg declared_type='NSString*' index='0' name='ipAddress' type='@'/>
+<arg declared_type='UInt32' index='1' name='servicePort' type='L' type64='I'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='ipAddress'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='manufacturer'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='modelName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='servicePort'>
+<retval declared_type='UInt32' type='L' type64='I'/>
+</method>
+<method selector='setDeviceID:'>
+<arg declared_type='NSString*' index='0' name='deviceID' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFriendlyName:'>
+<arg declared_type='NSString*' index='0' name='friendlyName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIcons:'>
+<arg declared_type='NSArray*' index='0' name='icons' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setManufacturer:'>
+<arg declared_type='NSString*' index='0' name='manufacturer' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setModelName:'>
+<arg declared_type='NSString*' index='0' name='modelName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='status'>
+<retval declared_type='GCKDeviceStatus' type='i' type64='q'/>
+</method>
+</class>
+<class name='GCKDeviceFilter'>
+<method selector='addDeviceFilterListener:'>
+<arg declared_type='id' index='0' name='listener' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='devices'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='initWithDeviceScanner:criteria:'>
+<arg declared_type='GCKDeviceScanner*' index='0' name='scanner' type='@'/>
+<arg declared_type='GCKFilterCriteria*' index='1' name='criteria' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='removeDeviceFilterListener:'>
+<arg declared_type='id' index='0' name='listener' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='GCKDeviceManager'>
+<method selector='addChannel:'>
+<arg declared_type='GCKCastChannel*' index='0' name='channel' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='connect'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='delegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='device'>
+<retval declared_type='GCKDevice*' type='@'/>
+</method>
+<method selector='disconnect'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='initWithDevice:clientPackageName:'>
+<arg declared_type='GCKDevice*' index='0' name='device' type='@'/>
+<arg declared_type='NSString*' index='1' name='clientPackageName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isConnected'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isConnectedToApp'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isReconnecting'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='joinApplication:'>
+<arg declared_type='NSString*' index='0' name='applicationID' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='joinApplication:sessionID:'>
+<arg declared_type='NSString*' index='0' name='applicationID' type='@'/>
+<arg declared_type='NSString*' index='1' name='sessionID' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='launchApplication:'>
+<arg declared_type='NSString*' index='0' name='applicationID' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='launchApplication:relaunchIfRunning:'>
+<arg declared_type='NSString*' index='0' name='applicationID' type='@'/>
+<arg declared_type='BOOL' index='1' name='relaunchIfRunning' type='B'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='leaveApplication'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='reconnectTimeout'>
+<retval declared_type='NSTimeInterval' type='d'/>
+</method>
+<method selector='removeChannel:'>
+<arg declared_type='GCKCastChannel*' index='0' name='channel' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='requestDeviceStatus'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setDelegate:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMuted:'>
+<arg declared_type='BOOL' index='0' name='muted' type='B'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setReconnectTimeout:'>
+<arg declared_type='NSTimeInterval' index='0' name='reconnectTimeout' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setVolume:'>
+<arg declared_type='float' index='0' name='volume' type='f'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='stopApplication'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='stopApplicationWithSessionID:'>
+<arg declared_type='NSString*' index='0' name='sessionID' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='GCKDeviceScanner'>
+<method selector='addListener:'>
+<arg declared_type='id' index='0' name='listener' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='devices'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='hasDiscoveredDevices'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='removeListener:'>
+<arg declared_type='id' index='0' name='listener' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='scanning'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='startScan'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stopScan'>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='GCKError'>
+<method class_method='true' selector='enumDescriptionForCode:'>
+<arg declared_type='GCKErrorCode' index='0' name='code' type='i' type64='q'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithCode:'>
+<arg declared_type='GCKErrorCode' index='0' name='code' type='i' type64='q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithCode:additionalUserInfo:'>
+<arg declared_type='GCKErrorCode' index='0' name='code' type='i' type64='q'/>
+<arg declared_type='NSDictionary*' index='1' name='additionalUserInfo' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='GCKFilterCriteria'>
+<method class_method='true' selector='criteriaForAvailableApplicationWithID:'>
+<arg declared_type='NSString*' index='0' name='applicationID' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='criteriaForRunningApplicationWithID:supportedNamespaces:'>
+<arg declared_type='NSString*' index='0' name='applicationID' type='@'/>
+<arg declared_type='NSArray*' index='1' name='supportedNamespaces' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='criteriaForRunningApplicationWithSupportedNamespaces:'>
+<arg declared_type='NSArray*' index='0' name='supportedNamespaces' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='GCKImage'>
+<method selector='JSONObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='URL'>
+<retval declared_type='NSURL*' type='@'/>
+</method>
+<method selector='height'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='initWithJSONObject:'>
+<arg declared_type='id' index='0' name='JSONObject' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithURL:width:height:'>
+<arg declared_type='NSURL*' index='0' name='URL' type='@'/>
+<arg declared_type='NSInteger' index='1' name='width' type='i' type64='q'/>
+<arg declared_type='NSInteger' index='2' name='height' type='i' type64='q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='width'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+</class>
+<class name='GCKJSONUtils'>
+<method class_method='true' selector='isJSONString:equivalentTo:'>
+<arg declared_type='NSString*' index='0' name='actual' type='@'/>
+<arg declared_type='NSString*' index='1' name='expected' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='parseJSON:'>
+<arg declared_type='NSString*' index='0' name='json' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='writeJSON:'>
+<arg declared_type='id' index='0' name='object' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='GCKLogger'>
+<method selector='delegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='logFromFunction:message:' variadic='true'>
+<arg const='true' declared_type='char*' index='0' name='function' type='*'/>
+<arg declared_type='NSString*' index='1' name='format' printf_format='true' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDelegate:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='sharedInstance'>
+<retval declared_type='GCKLogger*' type='@'/>
+</method>
+</class>
+<class name='GCKMediaControlChannel'>
+<method selector='approximateStreamPosition'>
+<retval declared_type='NSTimeInterval' type='d'/>
+</method>
+<method selector='delegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='loadMedia:'>
+<arg declared_type='GCKMediaInformation*' index='0' name='mediaInfo' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='loadMedia:autoplay:'>
+<arg declared_type='GCKMediaInformation*' index='0' name='mediaInfo' type='@'/>
+<arg declared_type='BOOL' index='1' name='autoplay' type='B'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='loadMedia:autoplay:playPosition:'>
+<arg declared_type='GCKMediaInformation*' index='0' name='mediaInfo' type='@'/>
+<arg declared_type='BOOL' index='1' name='autoplay' type='B'/>
+<arg declared_type='NSTimeInterval' index='2' name='playPosition' type='d'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='loadMedia:autoplay:playPosition:activeTrackIDs:'>
+<arg declared_type='GCKMediaInformation*' index='0' name='mediaInfo' type='@'/>
+<arg declared_type='BOOL' index='1' name='autoplay' type='B'/>
+<arg declared_type='NSTimeInterval' index='2' name='playPosition' type='d'/>
+<arg declared_type='NSArray*' index='3' name='activeTrackIDs' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='loadMedia:autoplay:playPosition:activeTrackIDs:customData:'>
+<arg declared_type='GCKMediaInformation*' index='0' name='mediaInfo' type='@'/>
+<arg declared_type='BOOL' index='1' name='autoplay' type='B'/>
+<arg declared_type='NSTimeInterval' index='2' name='playPosition' type='d'/>
+<arg declared_type='NSArray*' index='3' name='activeTrackIDs' type='@'/>
+<arg declared_type='id' index='4' name='customData' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='loadMedia:autoplay:playPosition:customData:'>
+<arg declared_type='GCKMediaInformation*' index='0' name='mediaInfo' type='@'/>
+<arg declared_type='BOOL' index='1' name='autoplay' type='B'/>
+<arg declared_type='NSTimeInterval' index='2' name='playPosition' type='d'/>
+<arg declared_type='id' index='3' name='customData' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='mediaStatus'>
+<retval declared_type='GCKMediaStatus*' type='@'/>
+</method>
+<method selector='pause'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='pauseWithCustomData:'>
+<arg declared_type='id' index='0' name='customData' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='play'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='playWithCustomData:'>
+<arg declared_type='id' index='0' name='customData' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='requestStatus'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='seekToTimeInterval:'>
+<arg declared_type='NSTimeInterval' index='0' name='timeInterval' type='d'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='seekToTimeInterval:resumeState:'>
+<arg declared_type='NSTimeInterval' index='0' name='position' type='d'/>
+<arg declared_type='GCKMediaControlChannelResumeState' index='1' name='resumeState' type='i' type64='q'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='seekToTimeInterval:resumeState:customData:'>
+<arg declared_type='NSTimeInterval' index='0' name='position' type='d'/>
+<arg declared_type='GCKMediaControlChannelResumeState' index='1' name='resumeState' type='i' type64='q'/>
+<arg declared_type='id' index='2' name='customData' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='setActiveTrackIDs:'>
+<arg declared_type='NSArray*' index='0' name='activeTrackIDs' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='setDelegate:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMediaStatus:'>
+<arg declared_type='GCKMediaStatus*' index='0' name='mediaStatus' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setStreamMuted:'>
+<arg declared_type='BOOL' index='0' name='muted' type='B'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='setStreamMuted:customData:'>
+<arg declared_type='BOOL' index='0' name='muted' type='B'/>
+<arg declared_type='id' index='1' name='customData' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='setStreamVolume:'>
+<arg declared_type='float' index='0' name='volume' type='f'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='setStreamVolume:customData:'>
+<arg declared_type='float' index='0' name='volume' type='f'/>
+<arg declared_type='id' index='1' name='customData' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='setTextTrackStyle:'>
+<arg declared_type='GCKMediaTextTrackStyle*' index='0' name='textTrackStyle' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='stop'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='stopWithCustomData:'>
+<arg declared_type='id' index='0' name='customData' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+</class>
+<class name='GCKMediaInformation'>
+<method selector='contentID'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='contentType'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='customData'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithContentID:streamType:contentType:metadata:streamDuration:customData:'>
+<arg declared_type='NSString*' index='0' name='contentID' type='@'/>
+<arg declared_type='GCKMediaStreamType' index='1' name='streamType' type='i' type64='q'/>
+<arg declared_type='NSString*' index='2' name='contentType' type='@'/>
+<arg declared_type='GCKMediaMetadata*' index='3' name='metadata' type='@'/>
+<arg declared_type='NSTimeInterval' index='4' name='streamDuration' type='d'/>
+<arg declared_type='id' index='5' name='customData' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithContentID:streamType:contentType:metadata:streamDuration:mediaTracks:textTrackStyle:customData:'>
+<arg declared_type='NSString*' index='0' name='contentID' type='@'/>
+<arg declared_type='GCKMediaStreamType' index='1' name='streamType' type='i' type64='q'/>
+<arg declared_type='NSString*' index='2' name='contentType' type='@'/>
+<arg declared_type='GCKMediaMetadata*' index='3' name='metadata' type='@'/>
+<arg declared_type='NSTimeInterval' index='4' name='streamDuration' type='d'/>
+<arg declared_type='NSArray*' index='5' name='mediaTracks' type='@'/>
+<arg declared_type='GCKMediaTextTrackStyle*' index='6' name='textTrackStyle' type='@'/>
+<arg declared_type='id' index='7' name='customData' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='mediaTracks'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='metadata'>
+<retval declared_type='GCKMediaMetadata*' type='@'/>
+</method>
+<method selector='setCustomData:'>
+<arg declared_type='id' index='0' name='customData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMetadata:'>
+<arg declared_type='GCKMediaMetadata*' index='0' name='metadata' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='streamDuration'>
+<retval declared_type='NSTimeInterval' type='d'/>
+</method>
+<method selector='streamType'>
+<retval declared_type='GCKMediaStreamType' type='i' type64='q'/>
+</method>
+<method selector='textTrackStyle'>
+<retval declared_type='GCKMediaTextTrackStyle*' type='@'/>
+</method>
+</class>
+<class name='GCKMediaMetadata'>
+<method selector='JSONObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='addImage:'>
+<arg declared_type='GCKImage*' index='0' name='image' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='allKeys'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='containsKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='dateAsStringForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='dateForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='NSDate*' type='@'/>
+</method>
+<method selector='doubleForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='doubleForKey:defaultValue:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<arg declared_type='double' index='1' name='defaultValue' type='d'/>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='images'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithJSONObject:'>
+<arg declared_type='id' index='0' name='JSONObject' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithMetadataType:'>
+<arg declared_type='GCKMediaMetadataType' index='0' name='metadataType' type='i' type64='q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='integerForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='integerForKey:defaultValue:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<arg declared_type='NSInteger' index='1' name='defaultValue' type='i' type64='q'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='metadataType'>
+<retval declared_type='GCKMediaMetadataType' type='i' type64='q'/>
+</method>
+<method class_method='true' selector='metadataWithJSONObject:'>
+<arg declared_type='id' index='0' name='JSONObject' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='objectForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='removeAllMediaImages'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDate:forKey:'>
+<arg declared_type='NSDate*' index='0' name='date' type='@'/>
+<arg declared_type='NSString*' index='1' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDouble:forKey:'>
+<arg declared_type='double' index='0' name='value' type='d'/>
+<arg declared_type='NSString*' index='1' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setInteger:forKey:'>
+<arg declared_type='NSInteger' index='0' name='value' type='i' type64='q'/>
+<arg declared_type='NSString*' index='1' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setString:forKey:'>
+<arg declared_type='NSString*' index='0' name='value' type='@'/>
+<arg declared_type='NSString*' index='1' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stringForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='GCKMediaStatus'>
+<method selector='activeTrackIDs'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='customData'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='idleReason'>
+<retval declared_type='GCKMediaPlayerIdleReason' type='i' type64='q'/>
+</method>
+<method selector='initWithSessionID:mediaInformation:'>
+<arg declared_type='NSInteger' index='0' name='mediaSessionID' type='i' type64='q'/>
+<arg declared_type='GCKMediaInformation*' index='1' name='mediaInformation' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isMediaCommandSupported:'>
+<arg declared_type='NSInteger' index='0' name='command' type='i' type64='q'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isMuted'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='mediaInformation'>
+<retval declared_type='GCKMediaInformation*' type='@'/>
+</method>
+<method selector='mediaSessionID'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='playbackRate'>
+<retval declared_type='float' type='f'/>
+</method>
+<method selector='playerState'>
+<retval declared_type='GCKMediaPlayerState' type='i' type64='q'/>
+</method>
+<method selector='setCustomData:'>
+<arg declared_type='id' index='0' name='customData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMediaInformation:'>
+<arg declared_type='GCKMediaInformation*' index='0' name='mediaInformation' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='streamPosition'>
+<retval declared_type='NSTimeInterval' type='d'/>
+</method>
+<method selector='volume'>
+<retval declared_type='float' type='f'/>
+</method>
+</class>
+<class name='GCKMediaTextTrackStyle'>
+<method selector='JSONObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='backgroundColor'>
+<retval declared_type='GCKColor*' type='@'/>
+</method>
+<method class_method='true' selector='createDefault'>
+<retval declared_type='GCKMediaTextTrackStyle*' type='@'/>
+</method>
+<method selector='customData'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='edgeColor'>
+<retval declared_type='GCKColor*' type='@'/>
+</method>
+<method selector='edgeType'>
+<retval declared_type='GCKMediaTextTrackStyleEdgeType' type='i' type64='q'/>
+</method>
+<method selector='fontFamily'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='fontGenericFamily'>
+<retval declared_type='GCKMediaTextTrackStyleFontGenericFamily' type='i' type64='q'/>
+</method>
+<method selector='fontScale'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='fontStyle'>
+<retval declared_type='GCKMediaTextTrackStyleFontStyle' type='i' type64='q'/>
+</method>
+<method selector='foregroundColor'>
+<retval declared_type='GCKColor*' type='@'/>
+</method>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithJSONObject:'>
+<arg declared_type='id' index='0' name='JSONObject' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setBackgroundColor:'>
+<arg declared_type='GCKColor*' index='0' name='backgroundColor' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCustomData:'>
+<arg declared_type='id' index='0' name='customData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEdgeColor:'>
+<arg declared_type='GCKColor*' index='0' name='edgeColor' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEdgeType:'>
+<arg declared_type='GCKMediaTextTrackStyleEdgeType' index='0' name='edgeType' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFontFamily:'>
+<arg declared_type='NSString*' index='0' name='fontFamily' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFontGenericFamily:'>
+<arg declared_type='GCKMediaTextTrackStyleFontGenericFamily' index='0' name='fontGenericFamily' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFontScale:'>
+<arg declared_type='CGFloat' index='0' name='fontScale' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFontStyle:'>
+<arg declared_type='GCKMediaTextTrackStyleFontStyle' index='0' name='fontStyle' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setForegroundColor:'>
+<arg declared_type='GCKColor*' index='0' name='foregroundColor' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWindowColor:'>
+<arg declared_type='GCKColor*' index='0' name='windowColor' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWindowRoundedCornerRadius:'>
+<arg declared_type='CGFloat' index='0' name='windowRoundedCornerRadius' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWindowType:'>
+<arg declared_type='GCKMediaTextTrackStyleWindowType' index='0' name='windowType' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='windowColor'>
+<retval declared_type='GCKColor*' type='@'/>
+</method>
+<method selector='windowRoundedCornerRadius'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='windowType'>
+<retval declared_type='GCKMediaTextTrackStyleWindowType' type='i' type64='q'/>
+</method>
+</class>
+<class name='GCKMediaTrack'>
+<method selector='JSONObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='contentIdentifier'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='contentType'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='customData'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='identifier'>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='initWithIdentifier:contentIdentifier:contentType:type:textSubtype:name:languageCode:customData:'>
+<arg declared_type='NSInteger' index='0' name='identifier' type='i' type64='q'/>
+<arg declared_type='NSString*' index='1' name='contentIdentifier' type='@'/>
+<arg declared_type='NSString*' index='2' name='contentType' type='@'/>
+<arg declared_type='GCKMediaTrackType' index='3' name='type' type='i' type64='q'/>
+<arg declared_type='GCKMediaTextTrackSubtype' index='4' name='textSubtype' type='i' type64='q'/>
+<arg declared_type='NSString*' index='5' name='name' type='@'/>
+<arg declared_type='NSString*' index='6' name='languageCode' type='@'/>
+<arg declared_type='id' index='7' name='customData' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithJSONObject:'>
+<arg declared_type='id' index='0' name='JSONObject' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='languageCode'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='name'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setCustomData:'>
+<arg declared_type='id' index='0' name='customData' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='textSubtype'>
+<retval declared_type='GCKMediaTextTrackSubtype' type='i' type64='q'/>
+</method>
+<method selector='type'>
+<retval declared_type='GCKMediaTrackType' type='i' type64='q'/>
+</method>
+</class>
+<class name='GCKSenderApplicationInfo'>
+<method selector='appIdentifier'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithJSONObject:'>
+<arg declared_type='id' index='0' name='JSONObject' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithPlatform:appIdentifier:launchURL:'>
+<arg declared_type='GCKSenderApplicationInfoPlatform' index='0' name='platform' type='i' type64='q'/>
+<arg declared_type='NSString*' index='1' name='appIdentifier' type='@'/>
+<arg declared_type='NSURL*' index='2' name='launchURL' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='launchURL'>
+<retval declared_type='NSURL*' type='@'/>
+</method>
+<method selector='platform'>
+<retval declared_type='GCKSenderApplicationInfoPlatform' type='i' type64='q'/>
+</method>
+<method selector='setLaunchURL:'>
+<arg declared_type='NSURL*' index='0' name='launchURL' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='NSDictionary'>
+<method selector='gck_arrayForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='gck_boolForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='gck_boolForKey:withDefaultValue:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<arg declared_type='BOOL' index='1' name='defaultValue' type='B'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='gck_dictionaryForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='gck_doubleForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='gck_doubleForKey:withDefaultValue:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<arg declared_type='double' index='1' name='defaultValue' type='d'/>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='gck_integerForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='gck_integerForKey:withDefaultValue:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<arg declared_type='NSInteger' index='1' name='defaultValue' type='i' type64='q'/>
+<retval declared_type='NSInteger' type='i' type64='q'/>
+</method>
+<method selector='gck_setBoolValue:forKey:'>
+<arg declared_type='BOOL' index='0' name='value' type='B'/>
+<arg declared_type='NSString*' index='1' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='gck_setDoubleValue:forKey:'>
+<arg declared_type='double' index='0' name='value' type='d'/>
+<arg declared_type='NSString*' index='1' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='gck_setIntegerValue:forKey:'>
+<arg declared_type='NSInteger' index='0' name='value' type='i' type64='q'/>
+<arg declared_type='NSString*' index='1' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='gck_setStringValue:forKey:'>
+<arg declared_type='NSString*' index='0' name='value' type='@'/>
+<arg declared_type='NSString*' index='1' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='gck_setUIntegerValue:forKey:'>
+<arg declared_type='NSUInteger' index='0' name='value' type='I' type64='Q'/>
+<arg declared_type='NSString*' index='1' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='gck_stringForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='gck_stringForKey:withDefaultValue:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<arg declared_type='NSString*' index='1' name='defaultValue' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='gck_uintegerForKey:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='gck_uintegerForKey:withDefaultValue:'>
+<arg declared_type='NSString*' index='0' name='key' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='defaultValue' type='I' type64='Q'/>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='deviceDidComeOnline:'>
+<arg declared_type='GCKDevice*' index='0' name='device' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceDidComeOnline:forDeviceFilter:'>
+<arg declared_type='GCKDevice*' index='0' name='device' type='@'/>
+<arg declared_type='GCKDeviceFilter*' index='1' name='deviceFilter' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceDidGoOffline:'>
+<arg declared_type='GCKDevice*' index='0' name='device' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceDidGoOffline:forDeviceFilter:'>
+<arg declared_type='GCKDevice*' index='0' name='device' type='@'/>
+<arg declared_type='GCKDeviceFilter*' index='1' name='deviceFilter' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didConnectToCastApplication:sessionID:launchedApplication:'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='GCKApplicationMetadata*' index='1' name='applicationMetadata' type='@'/>
+<arg declared_type='NSString*' index='2' name='sessionID' type='@'/>
+<arg declared_type='BOOL' index='3' name='launchedApplication' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didDisconnectFromApplicationWithError:'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didDisconnectWithError:'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didFailToConnectToApplicationWithError:'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didFailToConnectWithError:'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didFailToStopApplicationWithError:'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didReceiveActiveInputStatus:'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='GCKActiveInputStatus' index='1' name='activeInputStatus' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didReceiveStatusForApplication:'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='GCKApplicationMetadata*' index='1' name='applicationMetadata' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:volumeDidChangeToLevel:isMuted:'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='float' index='1' name='volumeLevel' type='f'/>
+<arg declared_type='BOOL' index='2' name='isMuted' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManagerDidConnect:'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='logFromFunction:message:'>
+<arg const='true' declared_type='char*' index='0' name='function' type='*'/>
+<arg declared_type='NSString*' index='1' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaControlChannel:didCompleteLoadWithSessionID:'>
+<arg declared_type='GCKMediaControlChannel*' index='0' name='mediaControlChannel' type='@'/>
+<arg declared_type='NSInteger' index='1' name='sessionID' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaControlChannel:didFailToLoadMediaWithError:'>
+<arg declared_type='GCKMediaControlChannel*' index='0' name='mediaControlChannel' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaControlChannel:requestDidCompleteWithID:'>
+<arg declared_type='GCKMediaControlChannel*' index='0' name='mediaControlChannel' type='@'/>
+<arg declared_type='NSInteger' index='1' name='requestID' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaControlChannel:requestDidFailWithID:error:'>
+<arg declared_type='GCKMediaControlChannel*' index='0' name='mediaControlChannel' type='@'/>
+<arg declared_type='NSInteger' index='1' name='requestID' type='i' type64='q'/>
+<arg declared_type='NSError*' index='2' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaControlChannelDidUpdateMetadata:'>
+<arg declared_type='GCKMediaControlChannel*' index='0' name='mediaControlChannel' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaControlChannelDidUpdateStatus:'>
+<arg declared_type='GCKMediaControlChannel*' index='0' name='mediaControlChannel' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<informal_protocol name='GCKDeviceFilterListener'>
+<method selector='deviceDidComeOnline:forDeviceFilter:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='GCKDevice*' index='0' name='device' type='@'/>
+<arg declared_type='GCKDeviceFilter*' index='1' name='deviceFilter' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceDidGoOffline:forDeviceFilter:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='GCKDevice*' index='0' name='device' type='@'/>
+<arg declared_type='GCKDeviceFilter*' index='1' name='deviceFilter' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='GCKDeviceManagerDelegate'>
+<method selector='deviceManager:didConnectToCastApplication:sessionID:launchedApplication:' type='v24@0:4@8@12@16B20' type64='v44@0:8@16@24@32B40'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='GCKApplicationMetadata*' index='1' name='applicationMetadata' type='@'/>
+<arg declared_type='NSString*' index='2' name='sessionID' type='@'/>
+<arg declared_type='BOOL' index='3' name='launchedApplication' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didDisconnectFromApplicationWithError:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didDisconnectWithError:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didFailToConnectToApplicationWithError:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didFailToConnectWithError:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didFailToStopApplicationWithError:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didReceiveActiveInputStatus:' type='v16@0:4@8i12' type64='v32@0:8@16q24'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='GCKActiveInputStatus' index='1' name='activeInputStatus' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:didReceiveStatusForApplication:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='GCKApplicationMetadata*' index='1' name='applicationMetadata' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManager:volumeDidChangeToLevel:isMuted:' type='v20@0:4@8f12B16' type64='v32@0:8@16f24B28'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<arg declared_type='float' index='1' name='volumeLevel' type='f'/>
+<arg declared_type='BOOL' index='2' name='isMuted' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceManagerDidConnect:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='GCKDeviceManager*' index='0' name='deviceManager' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='GCKDeviceScannerListener'>
+<method selector='deviceDidComeOnline:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='GCKDevice*' index='0' name='device' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deviceDidGoOffline:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='GCKDevice*' index='0' name='device' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='GCKLoggerDelegate'>
+<method selector='logFromFunction:message:' type='v16@0:4r*8@12' type64='v32@0:8r*16@24'>
+<arg const='true' declared_type='char*' index='0' name='function' type='*'/>
+<arg declared_type='NSString*' index='1' name='message' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='GCKMediaControlChannelDelegate'>
+<method selector='mediaControlChannel:didCompleteLoadWithSessionID:' type='v16@0:4@8i12' type64='v32@0:8@16q24'>
+<arg declared_type='GCKMediaControlChannel*' index='0' name='mediaControlChannel' type='@'/>
+<arg declared_type='NSInteger' index='1' name='sessionID' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaControlChannel:didFailToLoadMediaWithError:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='GCKMediaControlChannel*' index='0' name='mediaControlChannel' type='@'/>
+<arg declared_type='NSError*' index='1' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaControlChannel:requestDidCompleteWithID:' type='v16@0:4@8i12' type64='v32@0:8@16q24'>
+<arg declared_type='GCKMediaControlChannel*' index='0' name='mediaControlChannel' type='@'/>
+<arg declared_type='NSInteger' index='1' name='requestID' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaControlChannel:requestDidFailWithID:error:' type='v20@0:4@8i12@16' type64='v40@0:8@16q24@32'>
+<arg declared_type='GCKMediaControlChannel*' index='0' name='mediaControlChannel' type='@'/>
+<arg declared_type='NSInteger' index='1' name='requestID' type='i' type64='q'/>
+<arg declared_type='NSError*' index='2' name='error' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaControlChannelDidUpdateMetadata:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='GCKMediaControlChannel*' index='0' name='mediaControlChannel' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mediaControlChannelDidUpdateStatus:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='GCKMediaControlChannel*' index='0' name='mediaControlChannel' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+</signatures>
