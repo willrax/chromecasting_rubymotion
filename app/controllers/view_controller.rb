@@ -16,14 +16,14 @@ class ViewController < UIViewController
 
     self.navigationItem.rightBarButtonItem = UIBarButtonItem.alloc.initWithCustomView(@chromecast_button)
 
-    add_text_field
+    add_controls
 
     @scanner = GCKDeviceScanner.alloc.init
     @scanner.addListener self
     @scanner.startScan
   end
 
-  def add_text_field
+  def add_controls
     @text_field = UITextField.alloc.initWithFrame(CGRectMake(10, 100, 300, 40))
     @text_field.placeholder = "Type your message"
 
@@ -48,19 +48,14 @@ class ViewController < UIViewController
         sheet.showInView @chromecast_button
       end
     else
-      media_title = self.mediaInformation.metadata.stringForKey(kGCKMetadataKeyTitle)
       sheet = UIActionSheet.alloc.init
       sheet.title = "Casting to #{@selected_device.friendlyName}"
       sheet.delegate = self
 
-      if media_title != nil
-        sheet.addButtonWithTitle media_title
-      end
-
       sheet.addButtonWithTitle "Disconnect"
       sheet.addButtonWithTitle "Cancel"
-      sheet.destructiveButtonIndex = (media_title != nil ? 1 : 0)
-      sheet.cancelButtonIndex = (media_title != nil ? 2 : 1)
+      sheet.destructiveButtonIndex = 0
+      sheet.cancelButtonIndex = 1
       sheet.showInView chromecastButton
     end
   end
@@ -70,9 +65,6 @@ class ViewController < UIViewController
   end
 
   def connectToDevice
-    return if @selected_device == nil
-    puts "Casting to #{@selected_device.friendlyName}"
-
     info = NSBundle.mainBundle.infoDictionary
     @device_manager = GCKDeviceManager.alloc.initWithDevice(@selected_device, clientPackageName: info.objectForKey("CFBundleIdentifier"))
     @device_manager.delegate = self
